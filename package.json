@@ -1,0 +1,30 @@
+{
+    "name": "radioslider",
+    "title": "radioSlider",
+    "description": "jQuery plugin for enhancing radio inputs",
+    "version": "1.0.0",
+    "homepage": "https://github.com/slikts/radioslider",
+    "author": {
+        "name": "Reinis Ivanovs",
+        "url": "http://untu.ms/"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/slikts/radioslider.git"
+    },
+    "bugs": "https://github.com/slikts/radioslider/issues",
+    "licenses": [
+    {
+        "type": "MIT",
+        "url": "http://opensource.org/licenses/MIT"
+    }
+    ],
+    "dependencies": {
+        "jquery": ">= 1.7"
+    },
+    "files": [
+    "js/jquery.radioslider.js",
+    "js/jquery.radioslider.min.js"
+    ],
+    "keywords": [ "input", "radio", "widget", "ui", "jquery", "plugin" ]
+}
