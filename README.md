@@ -26,15 +26,16 @@ The plugin can be included in a page as follows:
     <script type="text/javascript" src="//github.com/slikts/radioslider/js/radioslider.jquery.min.js"></script>
 
 It's recommended to place the script tag at the end of the document to avoid
-blocking page rendering while the script is loading. The plugin depends on jQuery
-versions 1.7 or later.
+blocking page rendering while the script is loading. The plugin depends on **jQuery
+versions 1.7 or later**.
 
 The plugin provides several different style options for the radio groups
-which can be previewed in the examples page. The stylesheets need to be included
-in the head section of the document and the appropriate class names need to
+which can be previewed in the [examples page](https://github.com/slikts/radioslider).
+The stylesheets need to be included in the head section of the document and the appropriate class names need to
 be applied to the slider container for them to work. Custom styles for the
 radio groups can be achieved either using overrides with the provided
-example styles or by creating new custom style rules.
+example styles or by creating new custom style rules. See the "Styles" section
+of this document for more details.
 
 Usage
 -----
