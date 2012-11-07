@@ -1,4 +1,14 @@
+/*
+ * radioSlider 1.0.0 - jQuery plugin for enhancing radio inputs
+ * https://github.com/slikts/radioslider
+ * Copyright 2012 Reinis Ivanovs <dabas@untu.ms>
+ * MIT licenced
+ */
+
+/*jshint evil:true, devel:true, browser:true, jquery:true, strict: true */
 (function($) {
+    'use strict';
+
     function Slider(container, options) {
         var $container = $(container);
 
@@ -18,6 +28,7 @@
             // Prepended before all class and data property names to avoid
             // naming conflicts
             prefix: 'slider-',
+            // Determines whether the selector moves instantaneously or is animated
             animate: true,
             animateOptions: {
                 duration: 'fast',
@@ -31,8 +42,10 @@
             // Allows, e.g., selecting a child element of the label
             // or selecting the label by class name
             labelFilter: ':first',
+            // Currently just displays console output to help debugging labelFilter option
             debug: false,
-            sliderStyle: {}
+            // Inline style properties applied to the selector element
+            selectorStyle: {}
         },
         $activeLabel: undefined,
         init: function(container) {
@@ -62,8 +75,8 @@
             var labelSelector;
             if (!$label) {
                 // Find first label matching input and cache the result
-                labelSelector = 'label[for=' + $input.attr('id') + ']'
-                + this.options.labelFilter;
+                labelSelector = 'label[for=' + $input.attr('id') + ']' +
+                    this.options.labelFilter;
                 $label = this.$container.find(labelSelector);
                 if (this.options.debug && window.console) {
                     console.log('[slider.getLabel] input:', $input,
@@ -76,6 +89,7 @@
             return $label;
         },
         onInputFocus: function(event) {
+            console.log('focus', $(event.target).is(':focus'))
             this.getLabel(event.target).addClass(this.options.prefix + 'focus');
         },
         onInputBlur: function(event) {
@@ -128,7 +142,7 @@
             var style = $.extend({
                 position: 'absolute',
                 display: 'none'
-            }, this.options.sliderStyle);
+            }, this.options.selectorStyle);
             return $(this.selectorMarkup).css(style)
             .on('click', this.onSliderClick.bind(this));
         },
@@ -138,7 +152,7 @@
             }
             this.$activeLabel.data(this.options.prefix + '$input').focus();
         }
-    }
+    };
 
     $.fn.radioSlider = function(options) {
         return this.each(function() {
