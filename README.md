@@ -11,9 +11,8 @@ The design goals of radioSlider are to be lightweight, flexible and
 to follow the best development practices. The plugin can be applied to labeled
 radio inputs without requiring special changes to the document structure and with
 minimal configuration. The plugin preserves keyboard accessibility for the
-form inputs but doesn't duplicate default browser functions to make
-the enhanced inputs work. radioSlider also uses prototypal inheritance to make the
-plugin code cleaner and slightly more efficient.
+form inputs without duplicating default browser functions. radioSlider also uses
+prototypal inheritance to make the plugin code cleaner and slightly more efficient.
 
 The idea for the plugin came from reading [Invention: Multiple-Choice “Windowed Slider” UI](http://www.chrisnorstrom.com/2012/11/invention-multiple-choice-windowed-slider-ui/)
 by UI designer Chris Norström.
@@ -113,7 +112,9 @@ This is the full list of options with default values and comments:
 Styles
 ------
 
-The style examples use SASS and compass.
+The style examples use [Sass](http://sass-lang.com/) and [Compass](http://compass-style.org/)
+to make using CSS3 features easier and also to allow adapting the styles in a
+simple manner.
 
 XXX
 
