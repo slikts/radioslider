@@ -33,7 +33,7 @@ which can be previewed in the [examples page](https://github.com/slikts/radiosli
 The stylesheets need to be included in the head section of the document and the appropriate class names need to
 be applied to the slider container for them to work. Custom styles for the
 radio groups can be achieved either using overrides with the provided
-example styles or by creating new custom style rules. See the "Styles" section
+example styles or by creating new custom style rules. See the "[Styles](#styles)" section
 of this document for more details.
 
 Usage
@@ -68,6 +68,7 @@ new inputs and labels in the slider container.
 NB: This basic usage doesn't by itself create visible changes unless there are
 styles applied. Different style options along with more advanced usage can
 be seen in the [examples page](https://github.com/slikts/radioslider).
+More details about adapting the styles are in the "[Styles](#styles)" section of this README.
 
 Configuration
 -------------
