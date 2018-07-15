@@ -1,6 +1,9 @@
 radioSlider
 ===========
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/slikts/radioslider.svg)](https://greenkeeper.io/)
+
+
 radioSlider is a jQuery plugin for enhancing the presentation of radio input groups
 by positioning a "selector" element over the selected input's label.
 The basic principle of moving a selector over labels enables creating advanced
